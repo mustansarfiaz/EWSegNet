@@ -491,26 +491,71 @@
     </div>
   </section>
 
+  <!-- SPECTRALWASTE RESULTS TABLE -->
+  <section id="results-spectral" class="bg-b">
+    <div class="reveal">
+      <div class="sec-label">Results</div>
+      <h2>State-of-the-art on SpectralWaste</h2>
+      <p>Performance comparison in terms of mIoU (%) and class-wise IoU (%) on the SpectralWaste dataset.</p>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th rowspan="2">Method</th>
+              <th rowspan="2">mIoU (%) ↑</th>
+              <th colspan="6" style="border-left:1px solid rgba(255,255,255,0.2);">IoU (%) ↑</th>
+            </tr>
+            <tr style="background:#1e4d38;">
+              <th>Film</th>
+              <th>Basket</th>
+              <th>Cardboard</th>
+              <th>Video Tape</th>
+              <th>Filament</th>
+              <th>Trash Bag</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>MiniNet-v2</td><td>44.5</td><td>63.1</td><td>58.9</td><td>55.4</td><td>30.6</td><td>10.0</td><td>49.2</td></tr>
+            <tr><td>SegFormer-B0</td><td>48.4</td><td>66.9</td><td>71.3</td><td>48.9</td><td>33.6</td><td>15.2</td><td>54.6</td></tr>
+            <tr><td>InternImage-T</td><td>47.99</td><td>42.38</td><td>82.80</td><td>69.10</td><td>41.39</td><td>16.50</td><td>35.77</td></tr>
+            <tr><td>FANet</td><td>67.83</td><td>72.47</td><td>82.98</td><td class="second">75.26</td><td>41.28</td><td>67.65</td><td>67.36</td></tr>
+            <tr><td>COSNet</td><td class="second">69.96</td><td class="second">77.61</td><td class="second">83.65</td><td>75.14</td><td class="best">42.95</td><td class="second">69.06</td><td class="best">71.38</td></tr>
+            <tr class="ours">
+              <td>EWSegNet <span class="ours-tag">Ours</span></td>
+              <td class="best">71.03</td>
+              <td class="best">77.88</td>
+              <td class="best">84.16</td>
+              <td class="best">79.77</td>
+              <td class="second">42.05</td>
+              <td class="best">73.39</td>
+              <td class="second">68.96</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
   <!-- QUALITATIVE -->
-  <section id="qualitative" class="bg-b">
+  <section id="qualitative" class="bg-a">
     <div class="reveal">
       <div class="sec-label">Qualitative Analysis</div>
       <h2>Visual Comparison on ZeroWaste Dataset</h2>
       <div class="fig-wrap">
         <img src="https://raw.githubusercontent.com/mustansarfiaz/EWSegNet/main/images/zerowaste_visualizations.jpg" alt="Qualitative results on ZeroWaste" />
-        <p class="fig-cap">Visual comparison of EWSegNet with recent waste segmentation methods on the ZeroWaste dataset. As highlighted in yellow boxes, the proposed EWSegNet is fairly better at segmenting waste objects in cluttered scenes.</p>
+        <p class="fig-cap">Qualitative comparison of EWSegNet with the recent waste segmentation methods FANet and COSNet on ZeroWaste-f. Proposed EWSegNet provides reasonably better segmentation performance as highlighted in yellow boxes.</p>
       </div>
 
       <h3>Visual Comparison on Spectral Waste Dataset</h3>
       <div class="fig-wrap">
         <img src="https://raw.githubusercontent.com/mustansarfiaz/EWSegNet/main/images/specwaste_visualizations.jpg" alt="Qualitative results on Spectral Waste" />
-        <p class="fig-cap">Visual comparison of EWSegNet with recent waste segmentation methods FANet and COSNet on the Spectral Waste dataset. As highlighted in yellow boxes, proposed EWSegNet is fairly better to segment the waste objects in cluttered scenes.</p>
+        <p class="fig-cap">Visual comparison of EWSegNet with recent waste segmentation methods FANet and COSNet on Spectral Waste dataset. As highlighted in yellow boxes, proposed EWSegNet is fairly better to segment the waste objects in cluttered scenes.</p>
       </div>
     </div>
   </section>
 
   <!-- BIBTEX -->
-  <section id="bibtex" class="bg-a">
+  <section id="bibtex" class="bg-b">
     <div class="reveal">
       <div class="sec-label">Citation</div>
       <h2>BibTeX</h2>
