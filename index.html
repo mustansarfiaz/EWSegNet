@@ -241,6 +241,16 @@
     .copy-btn:hover { background: rgba(255,255,255,0.14); color: #fff; }
     .copy-btn.copied { color: #95d5a8; border-color: #95d5a8; }
 
+    .venue-badge {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: var(--green); color: #fff;
+      font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em;
+      text-transform: uppercase; padding: 7px 18px;
+      border-radius: 2px; margin-bottom: 28px;
+      animation: fadeUp 0.5s 0.12s ease both;
+      box-shadow: 0 2px 12px rgba(45,106,79,0.25);
+    }
+
     /* FOOTER */
     footer {
       background: var(--bg2); border-top: 1px solid var(--border);
@@ -269,18 +279,28 @@
 
 <!-- HERO -->
 <header class="hero">
-  <div class="hero-kicker">Waste Segmentation &nbsp;·&nbsp; 2025</div>
+  <div class="hero-kicker">Waste Segmentation &nbsp;·&nbsp; ICML 2026</div>
   <h1>Towards Effective <em>Waste Segmentation</em> for Automated Waste Recycling in Cluttered Background</h1>
 
+  <div class="venue-badge">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+    Accepted at ICML 2026
+  </div>
+
   <div class="authors">
-    <!-- Add author names here -->
-    Author One,&nbsp;
-    Author Two,&nbsp;
-    Author Three
+    <a href="https://openreview.net/profile?id=~Mamoona_Javaid1" target="_blank">Mamoona Javaid</a><sup>1</sup>,&nbsp;
+    <a href="https://openreview.net/profile?id=~Mubashir_Noman1" target="_blank">Mubashir Noman</a><sup>2</sup>,&nbsp;
+    <a href="https://openreview.net/profile?id=~Abdul_Hannan2" target="_blank">Abdul Hannan</a><sup>3</sup>,&nbsp;
+    <a href="https://openreview.net/profile?id=~Shah_Nawaz2" target="_blank">Shah Nawaz</a><sup>4</sup>,&nbsp;
+    <a href="https://openreview.net/profile?id=~Mustansar_Fiaz1" target="_blank">Mustansar Fiaz</a><sup>5</sup>,&nbsp;
+    <a href="https://openreview.net/profile?id=~Sajid_Ghuffar3" target="_blank">Sajid Ghuffar</a><sup>1</sup>
   </div>
   <div class="affiliations">
-    <!-- Add affiliations here -->
-    Institution · Country
+    <sup>1</sup>Institute of Space Technology, Pakistan &nbsp;·&nbsp;
+    <sup>2</sup>MBZUAI, UAE &nbsp;·&nbsp;
+    <sup>3</sup>University of Trento, Italy &nbsp;·&nbsp;
+    <sup>4</sup>Johannes Kepler University Linz, Austria &nbsp;·&nbsp;
+    <sup>5</sup>IBM Research, UAE
   </div>
 
   <div class="btn-row">
@@ -504,12 +524,13 @@
       <h2>BibTeX</h2>
       <div class="bibtex-block">
         <button class="copy-btn" onclick="copyBib(this)">Copy</button>
-        <pre id="bib">@article{ewsegnet2025,
+        <pre id="bib">@inproceedings{javaid2026ewsegnet,
   title   = {Towards Effective Waste Segmentation for Automated
              Waste Recycling in Cluttered Background},
-  author  = {Author One and Author Two and Author Three},
-  journal = {arXiv preprint},
-  year    = {2025}
+  author  = {Javaid, Mamoona and Noman, Mubashir and Hannan, Abdul
+             and Nawaz, Shah and Fiaz, Mustansar and Ghuffar, Sajid},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  year    = {2026}
 }</pre>
       </div>
     </div>
@@ -518,7 +539,7 @@
 </div>
 
 <footer>
-  <p>© 2025 EWSegNet Authors. All rights reserved.</p>
+  <p>© 2026 EWSegNet Authors. All rights reserved.</p>
 </footer>
 
 <script>
