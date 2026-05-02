@@ -353,11 +353,7 @@
       <div class="sec-label">Overall Framework</div>
       <h2>EWSegNet Architecture</h2>
       <div class="fig-wrap">
-        <!-- Replace with actual image -->
-        <div class="fig-placeholder" style="min-height:280px;">
-          <span class="ph-t">overall_framework.png</span>
-          <span class="ph-h">Replace with: &lt;img src="images/overall_framework.png" alt="EWSegNet framework"&gt;</span>
-        </div>
+        <img src="https://raw.githubusercontent.com/mustansarfiaz/EWSegNet/main/images/overall_framework2.jpg" alt="EWSegNet overall framework" />
         <p class="fig-cap">Overall framework of the proposed effective waste segmentation network (EWSegNet). The encoder consists of four stages that provide multiscale feature representations (F<sub>1</sub>, F<sub>2</sub>, F<sub>3</sub>, F<sub>4</sub>). Each stage (<i>i</i>) contains N<sub>i</sub> number of EWFE layers (where <i>i</i> ∈ [1,2,3,4]). Before each stage, a convolution layer is used to downsample the feature maps. Feature representations of stage three are fed to auxiliary feature enhancement (AFE) module to emphasize boundaries and blob regions and obtain feature maps F<sub>5</sub>. Finally, these multiscale features are fed to the decoder to obtain the segmentation map.</p>
       </div>
     </div>
@@ -369,21 +365,13 @@
       <div class="sec-label">Modules</div>
       <h2>Efficient Waste Feature Extraction Layer</h2>
       <div class="fig-wrap">
-        <!-- Replace with actual image -->
-        <div class="fig-placeholder" style="min-height:260px;">
-          <span class="ph-t">ewfe_layer.png</span>
-          <span class="ph-h">Replace with: &lt;img src="images/ewfe_layer.png" alt="EWFE layer"&gt;</span>
-        </div>
+        <img src="https://raw.githubusercontent.com/mustansarfiaz/EWSegNet/main/images/ewfe_layer2.jpg" alt="EWFE layer" />
         <p class="fig-cap">Efficient waste feature extraction (EWFE) layer is shown in Fig. a). Fig. b) represents the spatial context module (SCM) that is used for feature excitation and weighting in the spatial domain. In c), frequency context module (FCM) is illustrated that captures global contextual relationship between pixels in the frequency domain.</p>
       </div>
 
       <h3>Auxiliary Feature Enhancement Module (AFEM)</h3>
       <div class="fig-wrap">
-        <!-- Replace with actual image -->
-        <div class="fig-placeholder" style="min-height:220px;">
-          <span class="ph-t">afem_module.png</span>
-          <span class="ph-h">Replace with: &lt;img src="images/afem_module.png" alt="AFEM module"&gt;</span>
-        </div>
+        <img src="https://raw.githubusercontent.com/mustansarfiaz/EWSegNet/main/images/afe_module.jpg" alt="AFEM module" />
         <p class="fig-cap">This figure demonstrates the auxiliary feature enhancement module (AFEM) that has dual functions: boundaries enhancement (BE) and blob amplification (BA). BE emphasizes the fine details by using difference of Gaussian filtration while BA uses pooled attention to focus on semantic regions.</p>
       </div>
     </div>
@@ -505,14 +493,16 @@
   <section id="qualitative">
     <div class="reveal">
       <div class="sec-label">Qualitative Analysis</div>
-      <h2>Visual Comparison on Spectral Waste Dataset</h2>
+      <h2>Visual Comparison on ZeroWaste Dataset</h2>
       <div class="fig-wrap">
-        <!-- Replace with actual image -->
-        <div class="fig-placeholder" style="min-height:280px;">
-          <span class="ph-t">specwaste_visualizations.jpg</span>
-          <span class="ph-h">Replace with: &lt;img src="figures/specwaste_visualizations.jpg" alt="Qualitative results"&gt;</span>
-        </div>
-        <p class="fig-cap">Visual comparison of EWSegNet with recent waste segmentation methods FANet and COSNet on the Spectral Waste dataset. As highlighted in yellow boxes, the proposed EWSegNet is fairly better at segmenting waste objects in cluttered scenes.</p>
+        <img src="https://raw.githubusercontent.com/mustansarfiaz/EWSegNet/main/images/zerowaste_visualizations.jpg" alt="Qualitative results on ZeroWaste" />
+        <p class="fig-cap">Visual comparison of EWSegNet with recent waste segmentation methods on the ZeroWaste dataset. As highlighted in yellow boxes, the proposed EWSegNet is fairly better at segmenting waste objects in cluttered scenes.</p>
+      </div>
+
+      <h3>Visual Comparison on Spectral Waste Dataset</h3>
+      <div class="fig-wrap">
+        <img src="https://raw.githubusercontent.com/mustansarfiaz/EWSegNet/main/images/specwaste_visualizations.jpg" alt="Qualitative results on Spectral Waste" />
+        <p class="fig-cap">Visual comparison of EWSegNet with recent waste segmentation methods FANet and COSNet on the Spectral Waste dataset. As highlighted in yellow boxes, proposed EWSegNet is fairly better to segment the waste objects in cluttered scenes.</p>
       </div>
     </div>
   </section>
