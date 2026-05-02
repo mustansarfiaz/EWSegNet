@@ -132,8 +132,11 @@
 
     /* PAGE & SECTIONS */
     .page { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
-    section { padding: 68px 0; border-bottom: 1px solid var(--border); }
+    section { padding: 68px 24px; border-bottom: none; }
     section:last-of-type { border-bottom: none; }
+    section > .reveal { max-width: var(--max); margin: 0 auto; }
+    section.bg-a { background: var(--bg); }
+    section.bg-b { background: var(--bg2); }
 
     .sec-label {
       display: flex; align-items: center; gap: 10px;
@@ -319,10 +322,9 @@
   </div>
 </header>
 
-<div class="page">
 
   <!-- CONTRIBUTIONS -->
-  <section id="contributions">
+  <section id="contributions" class="bg-a">
     <div class="reveal">
       <div class="sec-label">Contributions</div>
       <h2>Key Contributions</h2>
@@ -348,7 +350,7 @@
   </section>
 
   <!-- OVERALL FRAMEWORK -->
-  <section id="framework">
+  <section id="framework" class="bg-b">
     <div class="reveal">
       <div class="sec-label">Overall Framework</div>
       <h2>EWSegNet Architecture</h2>
@@ -360,7 +362,7 @@
   </section>
 
   <!-- MODULES -->
-  <section id="modules">
+  <section id="modules" class="bg-a">
     <div class="reveal">
       <div class="sec-label">Modules</div>
       <h2>Efficient Waste Feature Extraction Layer</h2>
@@ -378,7 +380,7 @@
   </section>
 
   <!-- RESULTS -->
-  <section id="results">
+  <section id="results" class="bg-b">
     <div class="reveal">
       <div class="sec-label">Results</div>
       <h2>State-of-the-art on ZeroWaste-f</h2>
@@ -420,7 +422,7 @@
   </section>
 
   <!-- CLASS-WISE + ZEROAUG side by side -->
-  <section id="results-2">
+  <section id="results-2" class="bg-a">
     <div class="reveal">
       <div class="two-col">
 
@@ -490,7 +492,7 @@
   </section>
 
   <!-- QUALITATIVE -->
-  <section id="qualitative">
+  <section id="qualitative" class="bg-b">
     <div class="reveal">
       <div class="sec-label">Qualitative Analysis</div>
       <h2>Visual Comparison on ZeroWaste Dataset</h2>
@@ -508,7 +510,7 @@
   </section>
 
   <!-- BIBTEX -->
-  <section id="bibtex">
+  <section id="bibtex" class="bg-a">
     <div class="reveal">
       <div class="sec-label">Citation</div>
       <h2>BibTeX</h2>
@@ -525,8 +527,6 @@
       </div>
     </div>
   </section>
-
-</div>
 
 <footer>
   <p>© 2026 EWSegNet Authors. All rights reserved.</p>
